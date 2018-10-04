@@ -50,16 +50,17 @@ Using wind+solar+batteries+hydrogen we get total system costs (broken down by te
   and doesn't necessarily require any storage at all.
 
 
-- The wind profiles use the current wind turbine fleets. Future
+- The wind profiles used here are converted from wind speed time series assuming the current wind turbine fleet. New and future
   turbines have higher capacity factors because e.g. they're taller,
-  where wind resources are better.
+  capturing wind energy where resources are better.
 
-- Electrolysis could be more cost effective if: waste heat is used to
+- Electrolysis could be more cost effective if: waste heat from e.g. industrial sources is used to
   improve efficiency; the oxygen produced as a side-effect is sold.
 
-- Hydrogen-to-power (using CCGT here) may be cheaper with future
+- Hydrogen-to-power conversion (using a combined cycle gas turbine here) may be cheaper with future
   cost-reductions in the production of hydrogen fuel cells.
 
+- Hydrogen compression is not explicitly included, but the effect on the results is small. Underground storage is typically at 60-180 bar; PEM electrolysers output hydrogen at 60 bar or more (see e.g. [this report](http://europeanpowertogas.com/wp-content/uploads/2018/05/nLyJv2uT64.pdf) or [this one](https://doi.org/10.1016/j.ijhydene.2017.10.045)). Additional compression can reduce the volume of storage required.  Compressor cost is around 100 EUR/kWH2 according to [this report](http://europeanpowertogas.com/wp-content/uploads/2018/05/nLyJv2uT64.pdf), which is just over 10% of the 2020 electrolyser cost (and a much smaller fraction of system costs). Going from 60 to 180 bar costs around 2 kWhH2/kg, which is around 5% of the energy content of the hydrogen, effectively reducing the efficiency of the electrolysis.
 
 
 # Installation
