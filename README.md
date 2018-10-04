@@ -40,11 +40,10 @@ Using wind+solar+batteries+hydrogen we get total system costs (broken down by te
   residues), offshore wind, geothermal, nuclear and fossil/biomass plants with
   CCS. Additional storage technologies include redox flow batteries,
   compressed air energy storage, etc., see [this review](https://doi.org/10.1016/j.apenergy.2014.09.081). Existing and planned
-  transmission grid connects between countries can also reduce costs
-  by up to 20% by smoothing wind over a larger area. Demand-side
-  management can adapt demand to generation profiles. Furthermore,
-  flexibility from electric vehicles and electrified heating with
-  thermal storage can also reduce costs.
+  transmission grid connections between countries can also reduce costs
+  by up to 20% by smoothing wind over a larger area (see e.g. [this paper](https://arxiv.org/abs/1704.05492) or [this one](https://arxiv.org/abs/1705.07617)). Demand-side
+  management can adapt demand to generation profiles. Furthermore, including energy demand sectors other than electricity, like transport, heating and non-electric industrial demand can offer additional flexibility (e.g. load-shifting by battery electric vehicles and electrified heating with
+  thermal storage), see e.g. [this paper](https://arxiv.org/abs/1801.05290).
 
 - Costs here are for completely decarbonised electricity
   systems. Reaching lower levels of decarbonisation is much cheaper
@@ -58,7 +57,8 @@ Using wind+solar+batteries+hydrogen we get total system costs (broken down by te
 - Electrolysis could be more cost effective if: waste heat is used to
   improve efficiency; the oxygen produced as a side-effect is sold.
 
-- Hydrogen-to-power may be cheaper with future developments in fuel cells.
+- Hydrogen-to-power (using CCGT here) may be cheaper with future
+  cost-reductions in the production of hydrogen fuel cells.
 
 
 
@@ -77,6 +77,12 @@ You'll also need a linear program solver, see the [advice for free
 software
 solvers](https://www.pypsa.org/doc/installation.html#getting-a-solver-for-linear-optimisation). To
 solve 31 years at once, you'll need a commercial solver like Gurobi or CPLEX.
+
+## Hardware
+
+On a standard laptop or desktop you can solve the optimisation with a couple of years of weather data, even using an open source solver like cbc (change the `solver_name` setting).
+
+For the full 31 years, you'll need bigger iron, up to 20 GB RAM (the main bottleneck), and a commercial solver like Gurobi or CPLEX. It will take about 1-2 hours per country.
 
 ## Weather data
 
