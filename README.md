@@ -106,8 +106,8 @@ To run many simulations, e.g. on a cluster, use [snakemake](https://snakemake.re
 
 
 Results are summarised in `results-181002/summary.csv`. The full [PyPSA](https://github.com/PyPSA/PyPSA)
-output files (including all dispatch time series) will be uploaded to
-[Zenodo](https://zenodo.org) shortly (multiple GBs).
+output files (including all dispatch time series) can be found on
+[Zenodo](https://doi.org/10.5281/zenodo.1445684) (6 GB).
 
 
 # Licence
