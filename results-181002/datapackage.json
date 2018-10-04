@@ -1,0 +1,97 @@
+{
+    "name" : "WHOBS",
+    "title" : "WHOBS",
+    "description" : "Optimal Wind+Hydrogen+Other+Battery+Solar (WHOBS) electricity systems for European countries",
+    "version" : "20181002",
+    "licence" : "Creative Commons Attribution (CC BY 4.0)",
+    "resources" : [
+	{
+	    "path" : "summary.csv",
+	    "format" : "csv",
+	    "mediatype" : "text/csv",
+	    "encoding" : "UTF8",
+	    "dialect": {
+		"csvddfversion": 1.0,
+		"delimiter": ",",
+		"lineterminator": "\\n",
+		"header": true
+	    },
+	    "schema" : {
+		"fields" : [
+		    {
+			"name" : "cost",
+			"description" : "Average system cost",
+			"unit" : "EUR/MWh",
+			"type" : "number",
+		    },
+		    {
+			"name" : "wind",
+			"description" : "Onshore wind generation capacity",
+			"unit" : "MW",
+			"type" : "number",
+		    },
+		    {
+			"name" : "solar",
+			"description" : "Utility solar PV generation capacity",
+			"unit" : "MW",
+			"type" : "number",
+		    },
+		    {
+			"name" : "elec",
+			"description" : "Hydrogen electrolysis electricity capacity",
+			"unit" : "MW",
+			"type" : "number",
+		    },
+		    {
+			"name" : "fc",
+			"description" : "H2 to power (e.g. CCGT or fuel cell) generation capacity",
+			"unit" : "MW",
+			"type" : "number",
+		    },
+		    {
+			"name" : "charger",
+			"description" : "Battery power capacity",
+			"unit" : "MW",
+			"type" : "number",
+		    },
+		    {
+			"name" : "batt",
+			"description" : "Battery storage capacity",
+			"unit" : "MWh",
+			"type" : "number",
+		    },
+		    {
+			"name" : "H2",
+			"description" : "Hydrogen storage capacity",
+			"unit" : "MWh",
+			"type" : "number",
+		    },
+		    {
+			"name" : "wcurt",
+			"description" : "Wind curtailment",
+			"unit" : "per unit",
+			"type" : "number",
+		    },
+		    {
+			"name" : "scurt",
+			"description" : "Solar curtailment",
+			"unit" : "per unit",
+			"type" : "number",
+		    },
+		    {
+			"name" : "wsupply",
+			"description" : "Average available wind",
+			"unit" : "MW",
+			"type" : "number",
+		    },
+		    {
+			"name" : "ssupply",
+			"description" : "Average available solar",
+			"unit" : "MW",
+			"type" : "number",
+		    },
+		]
+	    }
+	}
+    ]
+}
