@@ -12,25 +12,22 @@ used from the open [renewables.ninja](https://www.renewables.ninja)
 project.
 
 Current electricity generation costs (investment and operation) are
-around 50-70 EUR/MWh.
+around 50-70 EUR/MWh (not necessarily the same as the average market
+price).
 
-Using wind+solar+batteries+hydrogen we get:
+Using wind+solar+batteries+hydrogen we get total system costs (broken down by technology):
 
-2020 assumptions:
+2020 assumptions (see `assumptions.csv`; important ones: cost of capital 5% - higher than in mature markets like Germany today -  and underground hydrogen storage):
 
 ![2020](https://raw.githubusercontent.com/PyPSA/whobs/master/img/2020.png)
 
-2030 assumptions:
+2030 assumptions (cost reductions + cost of capital to 3% as investors accustomise to renewables):
 
 ![2030](https://raw.githubusercontent.com/PyPSA/whobs/master/img/2030.png)
 
-2050 assumptions:
+2050 assumptions  (cost reductions + cost of capital to 2.5% as investors accustomise to renewables):
 
 ![2050](https://raw.githubusercontent.com/PyPSA/whobs/master/img/2050.png)
-
-## Important assumptions
-
-Discount rates, underground storage of hydrogen.
 
 ## Warnings
 
@@ -40,7 +37,7 @@ Discount rates, underground storage of hydrogen.
   simple setup. Additional generation technologies which may reduce
   costs include using existing hydroelectric generators, biomass from
   sustainable resources (such as waste and agricultural/forestry
-  residues), geothermal, nuclear and fossil/biomass plants with
+  residues), offshore wind, geothermal, nuclear and fossil/biomass plants with
   CCS. Additional storage technologies include redox flow batteries,
   compressed air energy storage, etc., see [this review](https://doi.org/10.1016/j.apenergy.2014.09.081). Existing and planned
   transmission grid connects between countries can also reduce costs
@@ -59,7 +56,7 @@ Discount rates, underground storage of hydrogen.
   where wind resources are better.
 
 - Electrolysis could be more cost effective if: waste heat is used to
-  improve efficiency; oxygen is sold.
+  improve efficiency; the oxygen produced as a side-effect is sold.
 
 - Hydrogen-to-power may be cheaper with future developments in fuel cells.
 
@@ -74,7 +71,7 @@ language (Version 3.x) along with the library
 [PyPSA](https://github.com/PyPSA/PyPSA). You can follow PyPSA's
 [installation
 instructions](https://www.pypsa.org/doc/installation.html) or just do
-`pip install pypsa`.
+`pip install pypsa` if you know what you're doing.
 
 You'll also need a linear program solver, see the [advice for free
 software
@@ -94,13 +91,17 @@ For the wind and solar generation time series, get from the [renewables.ninja do
 
 For short simulations, you can run the notebook `run_single_simulations.ipynb`.
 
-To run them on the command line, use `whobs.py`.
+To run them on the command line, use `python whobs.py`.
 
 To run many simulations, e.g. on a cluster, use [snakemake](https://snakemake.readthedocs.io/en/stable/).
 
 # Results files
 
-See zenodo.org
+
+Results are summarised in `results-181002/summary.csv`. The full [PyPSA](https://github.com/PyPSA/PyPSA)
+output files (including all dispatch time series) will be uploaded to
+[Zenodo](https://zenodo.org) shortly (multiple GBs).
+
 
 # Licence
 
