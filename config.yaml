@@ -1,0 +1,19 @@
+configfile: "config.yaml"
+
+
+results_dir: 'results-181002/'
+
+
+run_settings:
+  scenario: [2020,2030,2050,2050-steel_tanks]
+  country: ['AT', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR','GB', 'GR', 'HR', 'HU', 'IE', 'IT', 'LT', 'LU', 'LV', 'MK', 'NL', 'NO','PL', 'PT', 'RO', 'SE', 'SI', 'SK']
+
+#years for weather data (solar is 1985-2015 inclusive, wind is 1980-2016)
+year_start: 1985
+year_end: 2015
+
+#frequency 1 for hourly, 3 for 3-hourly
+frequency: 1
+
+#constant load
+load: 1 #in MW
