@@ -40,12 +40,12 @@ Discount rates, underground storage of hydrogen.
   simple setup. Additional generation technologies which may reduce
   costs include using existing hydroelectric generators, biomass from
   sustainable resources (such as waste and agricultural/forestry
-  residues), geothermal, nuclear and fossil plants with
+  residues), geothermal, nuclear and fossil/biomass plants with
   CCS. Additional storage technologies include redox flow batteries,
-  compressed air energy storage, etc. Existing and planned
+  compressed air energy storage, etc., see [this review](https://doi.org/10.1016/j.apenergy.2014.09.081). Existing and planned
   transmission grid connects between countries can also reduce costs
   by up to 20% by smoothing wind over a larger area. Demand-side
-  management can adapt demand to generation profiles. Furthermore
+  management can adapt demand to generation profiles. Furthermore,
   flexibility from electric vehicles and electrified heating with
   thermal storage can also reduce costs.
 
@@ -79,9 +79,7 @@ instructions](https://www.pypsa.org/doc/installation.html) or just do
 You'll also need a linear program solver, see the [advice for free
 software
 solvers](https://www.pypsa.org/doc/installation.html#getting-a-solver-for-linear-optimisation). To
-solve 31 years, you'll need a commercial solver like Gurobi or CPLEX.
-
-
+solve 31 years at once, you'll need a commercial solver like Gurobi or CPLEX.
 
 ## Weather data
 
@@ -91,6 +89,14 @@ For the wind and solar generation time series, get from the [renewables.ninja do
 
 - Wind time series `ninja_wind_europe_v1.1_current_on-offshore.csv` from "Wind v1.1 Europe"
 
+
+# Running a simulation
+
+For short simulations, you can run the notebook `run_single_simulations.ipynb`.
+
+To run them on the command line, use `whobs.py`.
+
+To run many simulations, e.g. on a cluster, use [snakemake](https://snakemake.readthedocs.io/en/stable/).
 
 # Results files
 
