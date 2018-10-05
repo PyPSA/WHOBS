@@ -60,6 +60,16 @@ Using wind+solar+batteries+hydrogen we get total system costs (broken down by te
 - Hydrogen-to-power conversion (using a combined cycle gas turbine here) may be cheaper with future
   cost-reductions in the production of hydrogen fuel cells.
 
+- The costs for underground hydrogen storage are taken from Table 3 of
+[this NREL study](https://www.nrel.gov/docs/fy10osti/46719.pdf), using
+the most expensive option ("rock caverns created by excavating
+comparatively impervious rock formations"). Where salt deposits exist,
+salt caverns would be cheaper. Studies on salt deposit availability
+are available for most countries, see e.g. [this map](https://www.researchgate.net/figure/Underground-salt-deposits-and-cavern-fields-in-Europe-225_fig5_319417820) for Europe.
+
+- The calculation here is done for a symbolic, constant 1 MW load. Scaling this up to country-level demand requires a more detailed consideration of land usage restrictions, which may affect how much onshore wind can be installed in densely-population countries. Onshore wind can be substituted with other low-carbon technologies (solar plus list above).
+
+
 - Hydrogen compression is not explicitly included, but the effect on the results is small. Underground storage is typically at 60-180 bar; PEM electrolysers output hydrogen at 60 bar or more (see e.g. [this report](http://europeanpowertogas.com/wp-content/uploads/2018/05/nLyJv2uT64.pdf) or [this one](https://doi.org/10.1016/j.ijhydene.2017.10.045)). Additional compression can reduce the volume of storage required.  Compressor cost is around 100 EUR/kWH2 according to [this report](http://europeanpowertogas.com/wp-content/uploads/2018/05/nLyJv2uT64.pdf), which is just over 10% of the 2020 electrolyser cost (and a much smaller fraction of system costs). Going from 60 to 180 bar costs around 2 kWhH2/kg, which is around 5% of the energy content of the hydrogen, effectively reducing the efficiency of the electrolysis.
 
 
