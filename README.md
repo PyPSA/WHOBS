@@ -37,7 +37,7 @@ Using wind+solar+batteries+hydrogen we get total system costs (broken down by te
   simple setup. Additional generation technologies which may reduce
   costs include using existing hydroelectric generators, biomass from
   sustainable resources (such as waste and agricultural/forestry
-  residues), offshore wind, geothermal, nuclear and fossil/biomass plants with
+  residues), offshore wind, concentrating solar thermal, geothermal, ocean energy, nuclear and fossil/biomass plants with
   CCS. Additional storage technologies include redox flow batteries,
   compressed air energy storage, etc., see [this review](https://doi.org/10.1016/j.apenergy.2014.09.081). Existing and planned
   transmission grid connections between countries can also reduce costs
@@ -53,6 +53,8 @@ Using wind+solar+batteries+hydrogen we get total system costs (broken down by te
 - The wind profiles used here are converted from wind speed time series assuming the current wind turbine fleet. New and future
   turbines have higher capacity factors because e.g. they're taller,
   capturing wind energy where resources are better.
+
+- Because the wind and solar profiles are computed using today's distribution of power plants, there is no possibility to optimise the distribution of power plants within each country to reduce the costs of providing a baseload profile.
 
 - Electrolysis could be more cost effective if: waste heat from e.g. industrial sources is used to
   improve efficiency; the oxygen produced as a side-effect is sold.
