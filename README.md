@@ -39,8 +39,8 @@ Using wind+solar+batteries+hydrogen we get total system costs (broken down by te
   sustainable resources (such as waste and agricultural/forestry
   residues), offshore wind, concentrating solar thermal, geothermal, ocean energy, nuclear and fossil/biomass plants with
   CCS. Additional storage technologies include redox flow batteries,
-  compressed air energy storage, etc., see [this review](https://doi.org/10.1016/j.apenergy.2014.09.081). Existing and planned
-  transmission grid connections between countries can also reduce costs
+  compressed air energy storage, etc., see [this review](https://doi.org/10.1016/j.apenergy.2014.09.081). No import or export capacities with other countries are assumed, so each country must meet the baseload profile by itself. Existing and planned
+  transmission grid connections between countries can reduce costs
   by up to 20% by smoothing wind over a larger area (see e.g. [this paper](https://arxiv.org/abs/1704.05492) or [this one](https://arxiv.org/abs/1705.07617)). Demand-side
   management can adapt demand to generation profiles. Furthermore, including energy demand sectors other than electricity, like transport, heating and non-electric industrial demand can offer additional flexibility (e.g. load-shifting by battery electric vehicles and electrified heating with
   thermal storage), see e.g. [this paper](https://arxiv.org/abs/1801.05290).
@@ -74,6 +74,7 @@ are available for most countries, see e.g. [this map](https://www.researchgate.n
 
 - Hydrogen compression is not explicitly included, but the effect on the results is small. Underground storage is typically at 60-180 bar; PEM electrolysers output hydrogen at 60 bar or more (see e.g. [this report](http://europeanpowertogas.com/wp-content/uploads/2018/05/nLyJv2uT64.pdf) or [this one](https://doi.org/10.1016/j.ijhydene.2017.10.045)). Additional compression can reduce the volume of storage required.  Compressor cost is around 100 EUR/kWH2 according to [this report](http://europeanpowertogas.com/wp-content/uploads/2018/05/nLyJv2uT64.pdf), which is just over 10% of the 2020 electrolyser cost (and a much smaller fraction of system costs). Going from 60 to 180 bar costs around 2 kWhH2/kg, which is around 5% of the energy content of the hydrogen, effectively reducing the efficiency of the electrolysis.
 
+- Costs for the electricity grid inside each country and costs for ancillary services are not included.
 
 # Installation
 
